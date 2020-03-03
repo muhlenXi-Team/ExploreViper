@@ -1,0 +1,55 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+// MARK: - ModuleProtocol
+/**
+ *  methods for communication OuterSide -> {{ module_info.name }}
+ *  define the capabilities of {{ module_info.name }}
+ */
+protocol {{ module_info.name }}ModuleInput: class {
+
+}
+
+/**
+ *  methods for communication {{ module_info.name }} -> OuterSide
+ *  tell the caller what is changed
+ */
+protocol {{ module_info.name }}ModuleOutput: class {
+
+}
+
+
+// MARK: - SceneProtocol
+/**
+ *  methods for communication PRESENTER -> VIEW
+ */
+protocol {{ module_info.name }}ViewInput: class {
+
+}
+
+/**
+ *  methods for communication VIEW -> PRESENTER
+ */
+protocol {{ module_info.name }}ViewOutput {
+
+}
+
+/**
+ *  methods for communication PRESENTER -> INTERACTOR
+ */
+protocol {{ module_info.name }}InteractorInput {
+
+}
+
+/**
+ *  methods for communication INTERACTOR -> PRESENTER
+ */
+protocol {{ module_info.name }}InteractorOutput: class {
+
+}
+

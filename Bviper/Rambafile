@@ -1,0 +1,22 @@
+### Headers settings
+company: BaiLun
+
+### Xcode project settings
+project_name: Bviper.xcodeproj
+xcodeproj_path: Bviper.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Bviper
+
+# The file path for new modules
+project_file_path: /Scenes
+
+# The Xcode group path to new modules
+project_group_path: /Scenes
+
+### Templates
+catalogs:
+- "https://gitwbp5.wbp5.com/iOS/bviper.git"
+templates:
+- {name: bviper}

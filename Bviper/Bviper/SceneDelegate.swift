@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let tabbarController = UITabBarController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -57,8 +57,6 @@ extension SceneDelegate {
         self.window = UIWindow(windowScene: scene)
         self.window?.backgroundColor = .white
         
-        let tabbarController = UITabBarController()
-        
         let east = EastModuleBuilder.setupModule().0
         let eastNav = UINavigationController(rootViewController: east)
         eastNav.tabBarItem = UITabBarItem(title: "East", image: nil, selectedImage: nil)
@@ -78,6 +76,28 @@ extension SceneDelegate {
         tabbarController.viewControllers = [eastNav ,westNav, northNav, SouthNav]
         self.window?.rootViewController = tabbarController
         self.window?.makeKeyAndVisible()
+        
+        self.setApperance()
+    }
+    
+    private func setApperance() {
+        let backgroundColor = UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0)
+        let normalColor = UIColor(red: 153/255.0, green: 153/255.0, blue: 153/255.0, alpha: 1.0)
+        let selectedColor = UIColor(red: 39/255.0, green: 97/255.0, blue: 181/255.0, alpha: 1.0)
+        let normalAttributes = [NSAttributedString.Key.foregroundColor: normalColor]
+        let selectedAttributes = [NSAttributedString.Key.foregroundColor: selectedColor]
+        
+        UITabBar.appearance().isTranslucent = false
+        
+        if #available(iOS 13.0, *) {
+            let appearance = tabbarController.tabBar.standardAppearance.copy()
+            appearance.backgroundColor = backgroundColor
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = normalAttributes
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = selectedAttributes
+            tabbarController.tabBar.standardAppearance = appearance
+        } else {
+            tabbarController.tabBar.barTintColor = backgroundColor
+        }
     }
 }
 

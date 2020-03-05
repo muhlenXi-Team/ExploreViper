@@ -10,61 +10,63 @@ import UIKit
 
 class EastViewController: UIViewController {
     var output: EastViewOutput!
+    
+    private lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.backgroundColor = .white
+        table.tableFooterView = UIView()
+        table.estimatedRowHeight = 0
+        table.estimatedSectionHeaderHeight = 0
+        table.estimatedSectionFooterHeight = 0
+        table.dataSource = self
+        table.delegate = self
+        table.rowHeight = 50.0
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return table
+    }()
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavItems()
         self.setupSubViews()
-        self.addObserverForNoti()
     }
 }
 
 
 // MARK: - Assistant
 extension EastViewController {
-    
-    func setupNavItems() {
-    
-    }
-    
     func setupSubViews() {
         self.view.backgroundColor = UIColor.white
-    }
-    
-    func addObserverForNoti() {
-    
-    }
-    
-}
-
-
-// MARK: - Network
-extension EastViewController {
-
-}
-
-
-// MARK: - Delegate,按照需要遵守代理协议
-extension EastViewController {
-
-}
-
-
-// MARK: - ClickEvents/Notification
-extension EastViewController {
-
-    // method for button click event
-    func onClickEastBtn(sender: UIButton) {
-    
-    }
-    
-    // method for recv notification 
-    func onRecvEastNoti(noti: Notification) {
-    
+        tableView.frame = UIScreen.main.bounds
+        self.setupEvents()
+        self.view.addSubview(tableView)
     }
 }
 
+// MARK: UITableViewDataSource / UITableViewDelegate
+extension EastViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return titles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let title = "\(indexPath.row + 1) - " + titles[indexPath.row]
+        cell.textLabel?.text = title
+        cell.textLabel?.textColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performEventsWith(title: titles[indexPath.row])
+    }
+}
 
 // MARK: - EastViewInput 
 extension EastViewController: EastViewInput {

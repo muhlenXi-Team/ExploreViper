@@ -1,5 +1,5 @@
 //
-//  HelloSceneViewController.swift
+//  SouthViewController.swift
 //  Bviper.xcodeproj
 //
 //  Created by xiyinjun on 05/03/2020.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HelloSceneViewController: UIViewController {
-    var output: HelloSceneViewOutput!
+class SouthViewController: UIViewController {
+    var output: SouthViewOutput!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class HelloSceneViewController: UIViewController {
 
 
 // MARK: - Assistant
-extension HelloSceneViewController {
+extension SouthViewController {
     
     func setupNavItems() {
     
@@ -40,51 +40,51 @@ extension HelloSceneViewController {
 
 
 // MARK: - Network
-extension HelloSceneViewController {
+extension SouthViewController {
 
 }
 
 
 // MARK: - Delegate,按照需要遵守代理协议
-extension HelloSceneViewController {
+extension SouthViewController {
 
 }
 
 
 // MARK: - ClickEvents/Notification
-extension HelloSceneViewController {
+extension SouthViewController {
 
     // method for button click event
-    func onClickHelloSceneBtn(sender: UIButton) {
+    func onClickSouthBtn(sender: UIButton) {
     
     }
     
     // method for recv notification 
-    func onRecvHelloSceneNoti(noti: Notification) {
+    func onRecvSouthNoti(noti: Notification) {
     
     }
 }
 
 
-// MARK: - HelloSceneViewInput 
-extension HelloSceneViewController: HelloSceneViewInput {
+// MARK: - SouthViewInput 
+extension SouthViewController: SouthViewInput {
 
 }
 
 
-// MARK: - HelloSceneModuleBuilder
- class HelloSceneModuleBuilder {
+// MARK: - SouthModuleBuilder
+ class SouthModuleBuilder {
    
-    class func setupModule(handler: HelloSceneModuleOutput? = nil) ->  (UIViewController, HelloSceneModuleInput) {
-        let viewController = HelloSceneViewController()
+    class func setupModule(handler: SouthModuleOutput? = nil) ->  (UIViewController, SouthModuleInput) {
+        let viewController = SouthViewController()
         
-        let presenter = HelloScenePresenter()
+        let presenter = SouthPresenter()
         presenter.view = viewController
         presenter.transitionHandler = viewController
         presenter.outer = handler
         viewController.output = presenter
        
-        let interactor = HelloSceneInteractor()
+        let interactor = SouthInteractor()
         interactor.output = presenter
         presenter.interactor = interactor
         

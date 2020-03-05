@@ -7,35 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C9392DEC5FAE1378AE9051 /* NorthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957375CC3E614D07F6C408FC /* NorthInteractor.swift */; };
+		0D564B90E6F31A4F68D232DC /* SouthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF8570E5AE9F978B8E70E2 /* SouthPresenter.swift */; };
+		1D44429902CC58A25B326001 /* SouthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5D52DAE961D534B9551EE2 /* SouthProtocols.swift */; };
+		27443D9BE86BDC7967AC9DA7 /* WestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335CB3FDF09DD19A9C6F54F9 /* WestProtocols.swift */; };
+		4570FFC0369472322E49B30E /* EastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63F9746A8D4CB279CF2216 /* EastViewController.swift */; };
+		48E5E5ADA2CE4DE3A45EA9D0 /* EastProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7338B761D0D15707E1C132 /* EastProtocols.swift */; };
+		639DF04884D441D80D2A344B /* WestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B2CC1D804FC2EAE632B49 /* WestPresenter.swift */; };
+		6C657B6B9957C92F76E97A3C /* NorthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215BA9085DCF1AD87EC4CA7 /* NorthViewController.swift */; };
+		7F5322B8E1482AABAA5CF59E /* SouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6DCC73A050FB0D7A5CF237 /* SouthViewController.swift */; };
+		A41B1A3D55864C01DB05261E /* EastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DB27AADF0944CE73A7C887 /* EastInteractor.swift */; };
 		AEDC09593EDEB488AE12838D /* Pods_Bviper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414147042EAD6D225B6F3401 /* Pods_Bviper.framework */; };
-		C74A60E158A72FE9BD9C1E9B /* HelloSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD15816EB558F5C2778981F /* HelloSceneProtocols.swift */; };
+		BE6D66F8C9830806F68119F3 /* EastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF9FC2EE9EFBDA63A4B6DF /* EastPresenter.swift */; };
 		C8141D7D241097AB0045555A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8141D7C241097AB0045555A /* AppDelegate.swift */; };
 		C8141D7F241097AB0045555A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8141D7E241097AB0045555A /* SceneDelegate.swift */; };
-		C8141D81241097AB0045555A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8141D80241097AB0045555A /* ViewController.swift */; };
 		C8141D84241097AB0045555A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8141D82241097AB0045555A /* Main.storyboard */; };
 		C8141D86241097AC0045555A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8141D85241097AC0045555A /* Assets.xcassets */; };
 		C8141D89241097AC0045555A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8141D87241097AC0045555A /* LaunchScreen.storyboard */; };
-		CFF09921695E9DFD1D5A0646 /* HelloSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48A635C399DCD660CECA31 /* HelloSceneViewController.swift */; };
-		F3C6D55393ECA1462C42FB65 /* HelloSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B3BBE89EE36C2FF54E2DF /* HelloSceneInteractor.swift */; };
-		FB901BE7103298FB6533166C /* HelloScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C82C6BC9A8EF451FFD02AF /* HelloScenePresenter.swift */; };
+		D0A22A470F1603BBFFDA1728 /* WestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2100F7B2A64A4BAFF122A34 /* WestViewController.swift */; };
+		D2A6936C0B462EBF7DF88A0E /* NorthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B2FA4BDFFD0E8A8943BC3 /* NorthPresenter.swift */; };
+		E2D011FF9528F1F4D4EB4952 /* NorthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03120F5410E5DD49218A7C83 /* NorthProtocols.swift */; };
+		EEFBF98D81748173AD31288E /* WestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1219DA35430C7929687EEDA2 /* WestInteractor.swift */; };
+		FFF91A07D932AB57DE6973A9 /* SouthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382273123C46B2E2342C3EAA /* SouthInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03120F5410E5DD49218A7C83 /* NorthProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NorthProtocols.swift; sourceTree = "<group>"; };
+		0E5D52DAE961D534B9551EE2 /* SouthProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SouthProtocols.swift; sourceTree = "<group>"; };
+		1215BA9085DCF1AD87EC4CA7 /* NorthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NorthViewController.swift; sourceTree = "<group>"; };
+		1219DA35430C7929687EEDA2 /* WestInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WestInteractor.swift; sourceTree = "<group>"; };
+		15DB27AADF0944CE73A7C887 /* EastInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EastInteractor.swift; sourceTree = "<group>"; };
 		2697C3E708BEDFAE41C90E61 /* Pods-Bviper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bviper.release.xcconfig"; path = "Target Support Files/Pods-Bviper/Pods-Bviper.release.xcconfig"; sourceTree = "<group>"; };
+		291B2FA4BDFFD0E8A8943BC3 /* NorthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NorthPresenter.swift; sourceTree = "<group>"; };
+		335CB3FDF09DD19A9C6F54F9 /* WestProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WestProtocols.swift; sourceTree = "<group>"; };
+		382273123C46B2E2342C3EAA /* SouthInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SouthInteractor.swift; sourceTree = "<group>"; };
 		414147042EAD6D225B6F3401 /* Pods_Bviper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bviper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FD15816EB558F5C2778981F /* HelloSceneProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloSceneProtocols.swift; sourceTree = "<group>"; };
-		77C82C6BC9A8EF451FFD02AF /* HelloScenePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloScenePresenter.swift; sourceTree = "<group>"; };
+		8D63F9746A8D4CB279CF2216 /* EastViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EastViewController.swift; sourceTree = "<group>"; };
+		92AF8570E5AE9F978B8E70E2 /* SouthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SouthPresenter.swift; sourceTree = "<group>"; };
+		957375CC3E614D07F6C408FC /* NorthInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NorthInteractor.swift; sourceTree = "<group>"; };
 		95BF90C982AFB5FE78F00C61 /* Pods-Bviper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bviper.debug.xcconfig"; path = "Target Support Files/Pods-Bviper/Pods-Bviper.debug.xcconfig"; sourceTree = "<group>"; };
+		A1AF9FC2EE9EFBDA63A4B6DF /* EastPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EastPresenter.swift; sourceTree = "<group>"; };
+		A2100F7B2A64A4BAFF122A34 /* WestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WestViewController.swift; sourceTree = "<group>"; };
+		AD4B2CC1D804FC2EAE632B49 /* WestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WestPresenter.swift; sourceTree = "<group>"; };
 		C8141D79241097AB0045555A /* Bviper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bviper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8141D7C241097AB0045555A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8141D7E241097AB0045555A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8141D80241097AB0045555A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8141D83241097AB0045555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8141D85241097AC0045555A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8141D88241097AC0045555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8141D8A241097AC0045555A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD48A635C399DCD660CECA31 /* HelloSceneViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloSceneViewController.swift; sourceTree = "<group>"; };
-		F58B3BBE89EE36C2FF54E2DF /* HelloSceneInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloSceneInteractor.swift; sourceTree = "<group>"; };
+		DD7338B761D0D15707E1C132 /* EastProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EastProtocols.swift; sourceTree = "<group>"; };
+		DF6DCC73A050FB0D7A5CF237 /* SouthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SouthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +72,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FEF579A3CCC1D750F86A85 /* South */ = {
+			isa = PBXGroup;
+			children = (
+				0E5D52DAE961D534B9551EE2 /* SouthProtocols.swift */,
+				650224D9B1640E51BEA81676 /* View */,
+				84B08EFDEB3C85922CDE6817 /* Presenter */,
+				2B01FDDC8F11F1246F9A1DB9 /* Model */,
+			);
+			path = South;
+			sourceTree = "<group>";
+		};
+		1C485BF6E562D7C989CD6477 /* West */ = {
+			isa = PBXGroup;
+			children = (
+				335CB3FDF09DD19A9C6F54F9 /* WestProtocols.swift */,
+				A09AD0107A05DD4822422B94 /* View */,
+				73122F62AC4F4C98BD6C56F0 /* Presenter */,
+				27B21FB6BF75114BBC1EB3FD /* Model */,
+			);
+			path = West;
+			sourceTree = "<group>";
+		};
+		1E1F9C1AF74877F80F303308 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				957375CC3E614D07F6C408FC /* NorthInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		21D7855A9AD469B5F1CB8DF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +110,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5916FE1A55797CEFE1A0D065 /* View */ = {
+		27B21FB6BF75114BBC1EB3FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CD48A635C399DCD660CECA31 /* HelloSceneViewController.swift */,
+				1219DA35430C7929687EEDA2 /* WestInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B01FDDC8F11F1246F9A1DB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				382273123C46B2E2342C3EAA /* SouthInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		650224D9B1640E51BEA81676 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF6DCC73A050FB0D7A5CF237 /* SouthViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6BE301997AC606BD17F29F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15DB27AADF0944CE73A7C887 /* EastInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7010B18991BCF4068EA09802 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				291B2FA4BDFFD0E8A8943BC3 /* NorthPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		73122F62AC4F4C98BD6C56F0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B2CC1D804FC2EAE632B49 /* WestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7BD6FD94DD6713F31C7A197E /* East */ = {
+			isa = PBXGroup;
+			children = (
+				DD7338B761D0D15707E1C132 /* EastProtocols.swift */,
+				EA8ACB8A349C8ECEE97547D4 /* View */,
+				ADB0CFBE23879F620BD3870A /* Presenter */,
+				6BE301997AC606BD17F29F6D /* Model */,
+			);
+			path = East;
 			sourceTree = "<group>";
 		};
 		843D71AD6AC37FB9F8472606 /* Pods */ = {
@@ -73,6 +176,41 @@
 				2697C3E708BEDFAE41C90E61 /* Pods-Bviper.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84B08EFDEB3C85922CDE6817 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				92AF8570E5AE9F978B8E70E2 /* SouthPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A09AD0107A05DD4822422B94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2100F7B2A64A4BAFF122A34 /* WestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7F8E6D148E703A5BD877DFC /* North */ = {
+			isa = PBXGroup;
+			children = (
+				03120F5410E5DD49218A7C83 /* NorthProtocols.swift */,
+				EB37FBEE7559DDEAA0F1BD8D /* View */,
+				7010B18991BCF4068EA09802 /* Presenter */,
+				1E1F9C1AF74877F80F303308 /* Model */,
+			);
+			path = North;
+			sourceTree = "<group>";
+		};
+		ADB0CFBE23879F620BD3870A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF9FC2EE9EFBDA63A4B6DF /* EastPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C8141D70241097AB0045555A = {
@@ -99,7 +237,6 @@
 			children = (
 				C8141D7C241097AB0045555A /* AppDelegate.swift */,
 				C8141D7E241097AB0045555A /* SceneDelegate.swift */,
-				C8141D80241097AB0045555A /* ViewController.swift */,
 				C8141D82241097AB0045555A /* Main.storyboard */,
 				C8141D85241097AC0045555A /* Assets.xcassets */,
 				C8141D87241097AC0045555A /* LaunchScreen.storyboard */,
@@ -111,36 +248,28 @@
 		C8141D90241098C30045555A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F84716DABD1E2A576DFE5659 /* HelloScene */,
+				7BD6FD94DD6713F31C7A197E /* East */,
+				1C485BF6E562D7C989CD6477 /* West */,
+				A7F8E6D148E703A5BD877DFC /* North */,
+				07FEF579A3CCC1D750F86A85 /* South */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		DADB053C97AD20A73182E408 /* Presenter */ = {
+		EA8ACB8A349C8ECEE97547D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				77C82C6BC9A8EF451FFD02AF /* HelloScenePresenter.swift */,
+				8D63F9746A8D4CB279CF2216 /* EastViewController.swift */,
 			);
-			path = Presenter;
+			path = View;
 			sourceTree = "<group>";
 		};
-		F84716DABD1E2A576DFE5659 /* HelloScene */ = {
+		EB37FBEE7559DDEAA0F1BD8D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4FD15816EB558F5C2778981F /* HelloSceneProtocols.swift */,
-				5916FE1A55797CEFE1A0D065 /* View */,
-				DADB053C97AD20A73182E408 /* Presenter */,
-				FBD12EF9C5311C18F55D9CE8 /* Model */,
+				1215BA9085DCF1AD87EC4CA7 /* NorthViewController.swift */,
 			);
-			path = HelloScene;
-			sourceTree = "<group>";
-		};
-		FBD12EF9C5311C18F55D9CE8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F58B3BBE89EE36C2FF54E2DF /* HelloSceneInteractor.swift */,
-			);
-			path = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,13 +387,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8141D81241097AB0045555A /* ViewController.swift in Sources */,
 				C8141D7D241097AB0045555A /* AppDelegate.swift in Sources */,
 				C8141D7F241097AB0045555A /* SceneDelegate.swift in Sources */,
-				C74A60E158A72FE9BD9C1E9B /* HelloSceneProtocols.swift in Sources */,
-				CFF09921695E9DFD1D5A0646 /* HelloSceneViewController.swift in Sources */,
-				FB901BE7103298FB6533166C /* HelloScenePresenter.swift in Sources */,
-				F3C6D55393ECA1462C42FB65 /* HelloSceneInteractor.swift in Sources */,
+				48E5E5ADA2CE4DE3A45EA9D0 /* EastProtocols.swift in Sources */,
+				4570FFC0369472322E49B30E /* EastViewController.swift in Sources */,
+				BE6D66F8C9830806F68119F3 /* EastPresenter.swift in Sources */,
+				A41B1A3D55864C01DB05261E /* EastInteractor.swift in Sources */,
+				27443D9BE86BDC7967AC9DA7 /* WestProtocols.swift in Sources */,
+				D0A22A470F1603BBFFDA1728 /* WestViewController.swift in Sources */,
+				639DF04884D441D80D2A344B /* WestPresenter.swift in Sources */,
+				EEFBF98D81748173AD31288E /* WestInteractor.swift in Sources */,
+				E2D011FF9528F1F4D4EB4952 /* NorthProtocols.swift in Sources */,
+				6C657B6B9957C92F76E97A3C /* NorthViewController.swift in Sources */,
+				D2A6936C0B462EBF7DF88A0E /* NorthPresenter.swift in Sources */,
+				07C9392DEC5FAE1378AE9051 /* NorthInteractor.swift in Sources */,
+				1D44429902CC58A25B326001 /* SouthProtocols.swift in Sources */,
+				7F5322B8E1482AABAA5CF59E /* SouthViewController.swift in Sources */,
+				0D564B90E6F31A4F68D232DC /* SouthPresenter.swift in Sources */,
+				FFF91A07D932AB57DE6973A9 /* SouthInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6Z2UB3ZFD;
 				INFOPLIST_FILE = Bviper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6Z2UB3ZFD;
 				INFOPLIST_FILE = Bviper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

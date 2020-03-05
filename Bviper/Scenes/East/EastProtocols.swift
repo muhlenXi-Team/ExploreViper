@@ -1,5 +1,5 @@
 //
-//  HelloSceneHelloSceneProtocols.swift
+//  EastEastProtocols.swift
 //  Bviper.xcodeproj
 //
 //  Created by xiyinjun on 05/03/2020.
@@ -8,18 +8,18 @@
 
 // MARK: - ModuleProtocol
 /**
- *  methods for communication OuterSide -> HelloScene
- *  define the capabilities of HelloScene
+ *  methods for communication OuterSide -> East
+ *  define the capabilities of East
  */
-protocol HelloSceneModuleInput: class {
+protocol EastModuleInput: class {
 
 }
 
 /**
- *  methods for communication HelloScene -> OuterSide
+ *  methods for communication East -> OuterSide
  *  tell the caller what is changed
  */
-protocol HelloSceneModuleOutput: class {
+protocol EastModuleOutput: class {
 
 }
 
@@ -28,28 +28,28 @@ protocol HelloSceneModuleOutput: class {
 /**
  *  methods for communication PRESENTER -> VIEW
  */
-protocol HelloSceneViewInput: class {
+protocol EastViewInput: class {
 
 }
 
 /**
  *  methods for communication VIEW -> PRESENTER
  */
-protocol HelloSceneViewOutput {
+protocol EastViewOutput {
 
 }
 
 /**
  *  methods for communication PRESENTER -> INTERACTOR
  */
-protocol HelloSceneInteractorInput {
+protocol EastInteractorInput {
 
 }
 
 /**
  *  methods for communication INTERACTOR -> PRESENTER
  */
-protocol HelloSceneInteractorOutput: class {
+protocol EastInteractorOutput: class {
 
 }
 

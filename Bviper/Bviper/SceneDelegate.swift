@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        self.setupRootViewControllers(windowScene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -49,5 +50,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+}
+
+extension SceneDelegate {
+    func setupRootViewControllers(_ scene: UIWindowScene) {
+        self.window = UIWindow(windowScene: scene)
+        self.window?.backgroundColor = .white
+        
+        let tabbarController = UITabBarController()
+        
+        let east = EastModuleBuilder.setupModule().0
+        let eastNav = UINavigationController(rootViewController: east)
+        eastNav.tabBarItem = UITabBarItem(title: "East", image: nil, selectedImage: nil)
+        
+        let west = WestModuleBuilder.setupModule().0
+        let westNav = UINavigationController(rootViewController: west)
+        westNav.tabBarItem = UITabBarItem(title: "West", image: nil, selectedImage: nil)
+        
+        let north = NorthModuleBuilder.setupModule().0
+        let northNav = UINavigationController(rootViewController: north)
+        northNav.tabBarItem = UITabBarItem(title: "North", image: nil, selectedImage: nil)
+        
+        let south = SouthModuleBuilder.setupModule().0
+        let SouthNav = UINavigationController(rootViewController: south)
+        SouthNav.tabBarItem = UITabBarItem(title: "South", image: nil, selectedImage: nil)
+        
+        tabbarController.viewControllers = [eastNav ,westNav, northNav, SouthNav]
+        self.window?.rootViewController = tabbarController
+        self.window?.makeKeyAndVisible()
+    }
 }
 
